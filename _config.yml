@@ -1,0 +1,22 @@
+# Site settings
+title: Bucketlist
+
+description: >
+  All the things Amy wants to do
+baseurl: ""
+url: "http://bucketlist.asellitt.com"
+
+# Build settings
+markdown: kramdown
+relative_permalinks: false
+permalink: :title/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  bucketlist:
+    output: true
+
+

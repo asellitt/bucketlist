@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <ul class="page-list">
+
+      {% include header.html %}
+
+      <li class="page-portfolio" id="page-portfolio">
+        <div class="main">
+          <h2 class="underline">
+            <span>Bucketlist</span>
+            <span></span>
+          </h2>
+          <div class="gallery clear-fix preloader">
+            <ul class="filter-list">
+              <li><a href="#" class="filter-0 selected">All</a></li>
+              <li><a href="#" class="filter-world">World</a></li>
+              <li><a href="#" class="filter-oceania">Oceania</a></li>
+              <li><a href="#" class="filter-europe">Europe</a></li>
+              <li><a href="#" class="filter-asia">Asia</a></li>
+              <li><a href="#" class="filter-north-america">North America</a></li>
+              <li><a href="#" class="filter-south-america">South America</a></li>
+              <li><a href="#" class="filter-africa">Africa</a></li>
+            </ul>
+
+            {{ content }}
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+
+</html>

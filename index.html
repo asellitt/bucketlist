@@ -1,0 +1,25 @@
+---
+layout: default
+home: true
+---
+
+<ul class="gallery-list layout-p-33x33x33 clear-fix">
+  {% for entry in site.bucketlist %}
+  <li class="column-right filter-{{ entry.category }}">
+    <div class="image image-overlay-url">
+      <a href="{{ entry.href }}" class="preloader-image">
+        {% if entry.done %}
+          <img src="{{ entry.thumb }}"/>
+        {% else %}
+          <img class="todo" src="{{ entry.thumb }}"/>
+        {% endif %}
+      </a>
+      <div class="image-description">
+        <h5>{{ entry.title }}</h5>
+        <span>{{ entry.subtitle }}</span>
+      </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
