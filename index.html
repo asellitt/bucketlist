@@ -4,6 +4,7 @@ home: true
 ---
 
 <ul class="gallery-list layout-p-33x33x33 clear-fix">
+  
   {% for entry in site.bucketlist %}
   <li class="column-right filter-{{ entry.category }}">
     <div class="image image-overlay-url">
@@ -21,4 +22,5 @@ home: true
     </div>
   </li>
   {% endfor %}
+  
 </ul>
